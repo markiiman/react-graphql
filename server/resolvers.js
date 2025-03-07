@@ -6,7 +6,7 @@ const resolvers = {
       return users;
     },
     getUserById: (_, { id }) => {
-      return users.find((user) => user.id === id);
+      return users.find((user) => user.id === parseInt(id));
     },
   },
   Mutation: {
